@@ -1,0 +1,95 @@
+
+[
+    {
+    "playerId": 1,
+    "name": "Chris Gayle",
+    "country": "West Indies",
+    "image": "https://i.ibb.co.com/RgtgPyr/chiris-jel.webp",
+    "role": "Batsman",
+    "battingType": "Left-Handed",
+    "biddingPrice": 1000000
+    },
+    {
+    "playerId": 2,
+    "name": "Babar Azam",
+    "country": "Pakistan",
+    "image": "https://i.ibb.co.com/CvHfBTD/bbm.webp",
+    "role": "Batsman",
+    "battingType": "Right-Handed",
+    "biddingPrice": 1200000
+    },
+    {
+    "playerId": 3,
+    "name": "Kane Williamson",
+    "country": "New Zealand",
+    "image": "https://i.ibb.co.com/vvrMHbk/kane-williamson.png",
+    "role": "Batsman",
+    "battingType": "Right-Handed",
+    "biddingPrice": 1300000
+    },
+    {
+    "playerId": 4,
+    "name": "Joe Root",
+    "country": "England",
+    "image": "https://i.ibb.co.com/MSyb5ys/Joe-Root.jpg",
+    "role": "Batsman",
+    "battingType": "Right-Handed",
+    "biddingPrice": 1100000
+    },
+    {
+    "playerId": 5,
+    "name": "David Warner",
+    "country": "Australia",
+    "image": "https://i.ibb.co.com/SdbymXC/gettyimages-1160440588-2048x2048.jpg",
+    "role": "Batsman",
+    "battingType": "Left-Handed",
+    "biddingPrice": 1400000
+    },
+    {
+    "playerId": 6,
+    "name": "Rashid Khan",
+    "country": "Afghanistan",
+    "image": "https://i.ibb.co.com/gZm2Z4T/Rashid-Khan.jpg",
+    "role": "Bowler",
+    "bowlingType": "Leg Spin",
+    "biddingPrice": 900000
+    },
+    {
+    "playerId": 7,
+    "name": "Jasprit Bumrah",
+    "country": "India",
+    "image": "https://i.ibb.co.com/vmkZ3jP/gettyimages-1982878048-2048x2048.jpg",
+    "role": "Bowler",
+    "bowlingType": "Fast",
+    "biddingPrice": 1600000
+    },
+    {
+    "playerId": 8,
+    "name": "Pat Cummins",
+    "country": "Australia",
+    "image": "https://i.ibb.co.com/8xNFfhT/gettyimages-1454752697-2048x2048.jpg",
+    "role": "Bowler",
+    "bowlingType": "Fast",
+    "biddingPrice": 1700000
+    },
+    {
+    "playerId": 9,
+    "name": "Mitchell Starc",
+    "country": "Australia",
+    "image": "https://i.ibb.co.com/WFgyxR9/Mitchell-Starc.png",
+    "role": "Bowler",
+    "bowlingType": "Fast",
+    "biddingPrice": 1400000
+    },
+    {
+    "playerId": 10,
+    "name": "Shakib Al Hasan",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co.com/jR26RQt/gettyimages-1636796092-2048x2048.jpg",
+    "role": "All-Rounder",
+    "battingType": "Left-Handed",
+    "bowlingType": "Slow Left Arm",
+    "biddingPrice": 800000
+    }
+]
+
