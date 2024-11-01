@@ -5,27 +5,21 @@ import banner_bg_img from '../../assets/images/bg-shadow.png'
 import banner_inside_img from '../../assets/images/banner-main.png'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { LuCircleDollarSign } from "react-icons/lu";
 
 
 
-const Navbar = () => {
+const Navbar = ({totalMoney, AddMoney}) => {
 
 
-    const [totalMoney, setState] = useState(0)
 
-    let initialnmoney = 1000000;
-
-    const AddMoney = () => {
-
-        const newMoney = totalMoney + initialnmoney;
-        setState(newMoney)
-
-
-    }
+  
 
     console.log(totalMoney)
 
-    const notify = () => toast("Money Added Successfully!");
+    const notify = () =>{
+        toast.success("Credit added to your account !")
+    } 
 
     const handelAddMoney = () => {
         AddMoney();
@@ -40,7 +34,7 @@ const Navbar = () => {
            <div className="navbar bg-slate-400 px-10  ">
             <div className="navbar-start">
                 <div className="dropdown">
-                <div tabindex="0" role="button" className="btn btn-ghost lg:hidden">
+                <div tabIndex="0" role="button" className="btn btn-ghost lg:hidden">
                     <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5"
@@ -48,14 +42,14 @@ const Navbar = () => {
                     viewBox="0 0 24 24"
                     stroke="currentColor">
                     <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                         d="M4 6h16M4 12h8m-8 6h16" />
                     </svg>
                 </div>
                 <ul
-                    tabindex="0"
+                    tabIndex="0"
                     className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                     <li><a>Item 1</a></li>
                     <li>
@@ -78,7 +72,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">  {totalMoney} Coin </a>
+                <a className="btn font-bold text-lg">  {totalMoney} Coin <LuCircleDollarSign /></a>
             </div>
             </div>
            </nav>

@@ -2,9 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
-const Player = ({card}) => {
+const Player = ({card,totalMoney,handlePurchase,handelSelected }) => {
+
+    // console.log(totalMoney)
 
     const {name,country,image,role,battingType,biddingPrice} = card;
+
+
+    const Purches_Player = () => {
+        handlePurchase(biddingPrice, card);
+      };
+      
+  
 
     return (
         <div>
@@ -13,6 +22,7 @@ const Player = ({card}) => {
 
             
                 <div>
+                    
                     <div className="card bg-base-100  shadow-xl">
                         <figure >
                             <img className='h-60 w-full object-cover'
@@ -32,7 +42,7 @@ const Player = ({card}) => {
                             </div>
                             <div className="flex justify-between items-center">
                                 <p className='font-semibold	'>Price</p>
-                                <button className='btn'> ${biddingPrice} </button>
+                                <button className='btn' onClick={Purches_Player}> ${biddingPrice} </button>
                             </div>
                             
                         </div>

@@ -3,7 +3,7 @@ import Player from '../player/player';
 import Selected from '../Selected/Selected';
 
 
-const Card = () => {
+const Card = ({ totalMoney,handlePurchase, handelSelected, selectedPlayer }) => {
 
 
    const [cards, setCardData] = useState([])
@@ -21,32 +21,47 @@ const Card = () => {
         <div className='px-10 pt-10'>
             {/* text-button div */}
 
-            <div className='flex justify-between items-center px-[7%]'>
-                <div>
-                    <h1 className='font-bold text-2xl'>Available Players</h1>
-                </div>
-                <div className='border-2 border-gray-300 rounded-xl	'>
+            <div className='flex  justify-end items-center px-[7%]'>
+                
+                <div className='border-2 border-gray-300 rounded-xl 	'>
                     <button className={`btn font-bold rounded-none rounded-l-lg ${!showSelected ? 'bg-green-500 text-white': ''}`} onClick={ () => setSelectedCard(false)}>Available</button>
-                    <button class={`btn font-bold rounded-none rounded-r-lg ${showSelected ? 'bg-green-500 text-white' : ''}`} onClick={() => setSelectedCard(true)}>Selected (0)</button>
+                    <button class={`btn font-bold rounded-none rounded-r-lg ${showSelected ? 'bg-green-500 text-white' : ''}`} onClick={() => setSelectedCard(true)}>Selected ({selectedPlayer.length})</button>
                 </div>
             </div> 
 
            <div className="flex justify-center mt-10">
+            
 
-            { showSelected ? (<Selected></Selected>) : ( <div  className='grid grid-cols-3 gap-4 place-items-center max-w-screen-lg '>
+            { showSelected ? 
+            
+            
+            (<Selected selectedPlayer={selectedPlayer}></Selected>
+            
+        
+        
+        
+        ) : ( 
+                
+                <div> 
+                    <h1 className='text-2xl font-bold pb-7'>Available Players</h1>
+                    <div  className='grid grid-cols-3 gap-4 place-items-center max-w-screen-lg '> 
                 {
                         cards.map(card => 
                         <Player
                         key={card.id}
                         card={card}
+                        totalMoney={totalMoney}
+                        handlePurchase={handlePurchase}
+                        handelSelected = {handelSelected}
 
 
                         ></Player>)
 
                     }
-            </div>)
+                </div>
+                </div>
                
-            }
+            )}
            
 
            </div>
