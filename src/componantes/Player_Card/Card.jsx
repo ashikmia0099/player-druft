@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import Player from '../player/player';
+import Selected from '../Selected/Selected';
 
 
 const Card = () => {
 
 
    const [cards, setCardData] = useState([])
+
+   const [showSelected, setSelectedCard] = useState(false)
 
    useEffect (() =>{
     fetch('players.json')
@@ -23,13 +26,14 @@ const Card = () => {
                     <h1 className='font-bold text-2xl'>Available Players</h1>
                 </div>
                 <div className='border-2 border-gray-300 rounded-xl	'>
-                    <button class="btn font-bold rounded-none rounded-l-lg">Available</button>
-                    <button class="btn font-bold rounded-none rounded-r-lg">Selected (0)</button>
+                    <button className={`btn font-bold rounded-none rounded-l-lg ${!showSelected ? 'bg-green-500 text-white': ''}`} onClick={ () => setSelectedCard(false)}>Available</button>
+                    <button class={`btn font-bold rounded-none rounded-r-lg ${showSelected ? 'bg-green-500 text-white' : ''}`} onClick={() => setSelectedCard(true)}>Selected (0)</button>
                 </div>
             </div> 
 
            <div className="flex justify-center mt-10">
-            <div  className='grid grid-cols-3 gap-4 place-items-center max-w-screen-lg'>
+
+            { showSelected ? (<Selected></Selected>) : ( <div  className='grid grid-cols-3 gap-4 place-items-center max-w-screen-lg '>
                 {
                         cards.map(card => 
                         <Player
@@ -40,7 +44,10 @@ const Card = () => {
                         ></Player>)
 
                     }
-            </div>
+            </div>)
+               
+            }
+           
 
            </div>
            

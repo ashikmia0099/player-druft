@@ -15,7 +15,7 @@ const Footer = () => {
                     <div className='flex gap-4  items-center'>
                         <label class="input input-bordered flex items-center gap-2">
                         Email
-                        <input type="text" class="grow" placeholder="daisy@site.com" />
+                        <input type="text" className="grow" placeholder="daisy@site.com" />
                         </label>
                         <button className='btn'>Button</button>
                     </div>
