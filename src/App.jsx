@@ -48,23 +48,7 @@ function App() {
     }
   };
 
-  // selected player
-
-  // const handelSelected = singleplayer => {
-
-  //   if (selectedPlayer.length < 6){
-  //     const newSelected = [...selectedPlayer, singleplayer] 
-  //     setSelectedPlayer(newSelected)
-
-  //   }
-  //   else{
-  //     toast('Maximum Purchsed 6 Player');
-  //   }
-      
-
-
-    
-  // }
+  
 
   const handelSelected = singleplayer => {
 
