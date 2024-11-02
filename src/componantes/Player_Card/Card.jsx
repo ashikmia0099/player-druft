@@ -24,8 +24,8 @@ const Card = ({ totalMoney,handlePurchase, handelSelected, selectedPlayer }) => 
             <div className='flex  justify-end items-center px-[7%]'>
                 
                 <div className='border-2 border-gray-300 rounded-xl 	'>
-                    <button className={`btn font-bold rounded-none rounded-l-lg ${!showSelected ? 'bg-green-500 text-white': ''}`} onClick={ () => setSelectedCard(false)}>Available</button>
-                    <button class={`btn font-bold rounded-none rounded-r-lg ${showSelected ? 'bg-green-500 text-white' : ''}`} onClick={() => setSelectedCard(true)}>Selected ({selectedPlayer.length})</button>
+                    <button className={`btn font-bold rounded-none rounded-l-lg ${!showSelected ? 'bg-[#E7FE29]': ''}`} onClick={ () => setSelectedCard(false)}>Available</button>
+                    <button class={`btn font-bold rounded-none rounded-r-lg ${showSelected ? 'bg-[#E7FE29]' : ''}`} onClick={() => setSelectedCard(true)}>Selected ({selectedPlayer.length})</button>
                 </div>
             </div> 
 

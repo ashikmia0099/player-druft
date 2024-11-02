@@ -26,6 +26,9 @@ const Selected = ({selectedPlayer}) => {
 
                 }
             </div>
+            <div>
+                <button class="btn bg-[#E7FE29] text-xl font-semibold mt-5">Add More Player</button>
+            </div>
             
         </div>
     );

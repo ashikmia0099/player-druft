@@ -92,15 +92,6 @@ const Navbar = ({totalMoney, AddMoney}) => {
             </div>
             <ToastContainer></ToastContainer>
 
-
-            
-         
-
-            
-
-
-
-
         </div>
     );
 };

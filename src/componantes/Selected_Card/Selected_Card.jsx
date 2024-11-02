@@ -2,7 +2,7 @@ import React from 'react';
 import selected_image from '../../assets/images/logo.png';
 import { MdDeleteForever } from "react-icons/md";
 
-const Selected_Card = ({player}) => {
+const Selected_Card = ({player,removePlayer}) => {
 
     
     return (
@@ -19,11 +19,13 @@ const Selected_Card = ({player}) => {
                 </div>
             </div>
             <div> 
-                <button><MdDeleteForever className='h-10 w-10' /> </button>
+                <button  onClick={() => removePlayer(player.id)}><MdDeleteForever className='h-10 w-10' /> </button>
                 
             </div>
 
             </div>
+
+           
             
         </div>
     );

@@ -15,6 +15,7 @@ function App() {
   
   const [totalMoney, setState] = useState(0)
   const [selectedPlayer, setSelectedPlayer] = useState([])
+  const [selectedDelete, setDeleteSelected] = useState(false)
 
   let initialnmoney = 1000000;
 
@@ -28,6 +29,9 @@ function App() {
 
   //  bidding price function
   const handlePurchase = (price, singleplayer) => {
+
+    
+
     if (totalMoney >= price ) {
 
       if (selectedPlayer.length < 6){
@@ -61,6 +65,12 @@ function App() {
     else{
      
     }
+    
+  }
+
+  // delete selectedData
+
+  const handelDelete = () => {
     
   }
 
