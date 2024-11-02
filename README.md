@@ -1,8 +1,19 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# BPL 2024 Selection
 
-Currently, two official plugins are available:
+BPL 2024 Selection site is mainly created to select the players of bpl 2024. Any player can be purchased here. Players can be purchased, selected and deleted from this site.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Technologies 
+
+**Client:** HTML, TailwindCSS, DUSYUI, React
+
+
+
+##  KEY FEATURES OF PROJECT 
+
+1. Purchase Player
+2. Fake Money Add
+3. Maximum 6 players add
+4. Delete player
+
